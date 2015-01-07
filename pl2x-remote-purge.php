@@ -9,6 +9,7 @@
 
 namespace PL2X;
 
+use stdClass;
 use OptEngine;
 
 class RemotePurge
@@ -49,7 +50,7 @@ class RemotePurge
 	{
 		if ( $key = filter_input(INPUT_GET, self::PURGE_QUERY_VAR) )
 		{
-			$response = new \stdClass;
+			$response = new stdClass;
 
 			if ( $key === self::get_purge_key() )
 			{
@@ -132,7 +133,7 @@ class RemotePurge
 
 	public static function get_panel_config()
 	{
-		$config = new \stdClass;
+		$config = new stdClass;
 		$config->remote_purge_key = array(
 			'title'    => 'Remote Purge Key',
 			'shortexp' => 'For purging theme cache remotely. Especially useful for regenerating styles after deploying new changes.',
