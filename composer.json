@@ -1,0 +1,14 @@
+{
+    "name": "aaemnnosttv/pl2x-remote-purge",
+    "description": "A utility to allow for PL2X cache to be purged remotely using a dynamic url.",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "authors": [
+        {
+            "name": "Evan Mattson",
+            "email": "me@aaemnnost.tv"
+        }
+    ]
+}
