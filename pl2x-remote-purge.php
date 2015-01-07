@@ -123,10 +123,7 @@ class RemotePurge
 
 	public static function add_panel( $opts )
 	{
-		if ( current_user_can( 'administrator' ) )
-		{
-			$opts['remote_purge'] = (array) self::get_panel_config();
-		}
+		$opts['remote_purge'] = (array) self::get_panel_config();
 
 		return $opts;
 	}
