@@ -2,7 +2,7 @@
 /**
  * Plugin Name: PL2X Remote Purge
  * Author: Evan Mattson
- * Version: 0.1
+ * Version: 0.2
  * Description: A utility to allow for PL2X cache to be purged remotely using a dynamic url.
  * GitHub Plugin URI: aaemnnosttv/pl2x-remote-purge
  */
