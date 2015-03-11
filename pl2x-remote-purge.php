@@ -54,7 +54,17 @@ class RemotePurge
 
 			if ( $key === self::get_purge_key() )
 			{
+				delete_transient(EXTEND_UPDATE);
+				delete_transient('pagelines_extend_themes');
+				delete_transient('pagelines_extend_sections');
+				delete_transient('pagelines_extend_plugins');
+				delete_transient('pagelines_extend_integrations');
+				delete_transient('pagelines_sections_cache');
+				remove_theme_mod('available_updates');
+				remove_theme_mod('pending_updates');
+
 				do_action('extend_flush');
+
 				$response->status = 'success';
 				$response->message = 'Cache purged.';
 				$status_code = 200;
